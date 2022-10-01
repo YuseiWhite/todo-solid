@@ -8,6 +8,8 @@ type Todo = {
 };
 
 const [todos, setTodos] = createSignal<Todo[]>([]);
+console.log("setTodos: ", setTodos);
+console.log("todos: ", todos);
 
 const App = () => {
   let input: HTMLInputElement | undefined;
